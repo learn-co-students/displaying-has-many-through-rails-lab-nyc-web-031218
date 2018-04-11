@@ -1,0 +1,4 @@
+<% @doctors.each{ |doctor| %>
+  <%=  doctor.name %>
+  <%= doctor.appointments.count %>
+<% } %>
