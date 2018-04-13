@@ -1,0 +1,12 @@
+Edit a Doctor
+
+<hr>
+
+<%= form_for @doctor do |f| %>
+	     <%= f.label :name %>
+	     <%= f.text_field :name %>
+       <%= f.label :department %>
+       <%= f.text_field :department %>
+       <%= f.collection_check_boxes :patient_ids, @patients, :id, :name %> 
+	     <%= f.submit %>
+	<% end %>
